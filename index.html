@@ -87,8 +87,8 @@
   <header class="hero" id="inicio">
     <div class="wrap" style="text-align:center">
       <h1 class="title">Portafolio de Integración</h1>
-      <div class="tag">“Si solo haces lo que sabes hacer, nunca serás más de lo que eres ahora.”</div>
-      <p class="lead">Espacio para documentar mis prácticas, tareas y proyecto final. Todo el contenido vive en GitHub y se despliega aquí con <code>git pull</code> en el servidor.</p>
+      <!-- <div class="tag">“Si solo haces lo que sabes hacer, nunca serás más de lo que eres ahora.”</div> -->
+      <!-- <p class="lead">Espacio para documentar mis prácticas, tareas y proyecto final. Todo el contenido vive en GitHub y se despliega aquí con <code>git pull</code> en el servidor.</p> -->
       <a class="cta" href="#practicas">Ver mis proyectos</a>
     </div>
   </header>
@@ -126,9 +126,7 @@
             <div class="github-link"
                 data-url="https://github.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/tree/main/ejercicios-guiados/EjercicioGuiado01"></div>
 
-            <!-- (Opcional) screenshot si subes img/EjercicioGuiado01.png -->
-            <div class="practice-image" data-image-url="img/EjercicioGuiado01.png"></div>
-
+   
             <!-- Archivos que se muestran en pestañas (desde GitHub Raw) -->
             <div class="code-files">
             <span data-filename="app.py"
@@ -169,8 +167,7 @@
             <span data-filename="index.html"
                 data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado02/index.html"></span>
             <span data-filename="reflexión.md"
-                data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado02/reflexión.md"></span>
-            </div>
+                data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado02/reflexi%C3%B3n.md"></span>
         </div>
 
         <a class="btn open-modal">Ver detalles y código</a>
@@ -204,55 +201,96 @@
 
   <!-- TAREAS -->
   <section id="tareas">
-    <div class="wrap">
-      <h2 class="h2">Tareas</h2>
-      <p class="sub">Investigaciones y reportes (PDFs).</p>
+    <div class="grid">
+  <!-- TAREA 1 -->
+  <article class="card">
+    <div class="head">
+      <div class="icon"><i class="fa-solid fa-file-lines"></i></div>
+      <h3 style="margin:0">Tarea 1: Modelos de servicio</h3>
+    </div>
+    <p class="desc">Resumen de SaaS, PaaS, IaaS y FaaS con ejemplos.</p>
+    <div class="tags"><span class="tagchip">Cloud</span><span class="tagchip">Imagen</span></div>
 
-      <div class="grid">
-        <article class="card">
-          <div class="head"><div class="icon"><i class="fa-solid fa-file-pdf"></i></div><h3 style="margin:0">Tarea 1: Modelos de servicio</h3></div>
-          <p class="desc">Resumen de SaaS, PaaS, IaaS y FaaS con comparativas.</p>
-          <div class="tags"><span class="tagchip">Cloud</span><span class="tagchip">PDF</span></div>
+    <div class="modal-info" style="display:none">
+      <div class="learnings">Comparativa de modelos, casos de uso y trade-offs.</div>
+      <!-- imagen en /img del repo PaginaPersonalIntegracion -->
+      <div class="practice-image" data-image-url="img/Tarea01.png"></div>
+    </div>
 
-          <div class="modal-info" style="display:none">
-            <div class="learnings">Arquitecturas, escalabilidad y trade-offs.</div>
-            <div class="pdf-files">
-              <span data-filename="Tarea1.pdf" data-pdf-url="img/Tarea1.pdf"></span>
-            </div>
-          </div>
+    <a class="btn open-modal">Ver detalles</a>
+  </article>
 
-          <a class="btn open-modal">Ver detalles y documentación</a>
-        </article>
+  <!-- TAREA 2 -->
+  <article class="card">
+    <div class="head">
+      <div class="icon"><i class="fa-solid fa-file-pdf"></i></div>
+      <h3 style="margin:0">Tarea 2: Cloud-native o Cloud-enabled</h3>
+    </div>
+    <p class="desc">Análisis de diferencias de arquitectura y diseño.</p>
+    <div class="tags"><span class="tagchip">Cloud</span><span class="tagchip">PDF</span></div>
+
+    <div class="modal-info" style="display:none">
+      <div class="learnings">Patrones, madurez cloud y ejemplos prácticos.</div>
+      <!-- PDF con espacios → URL codificada -->
+      <div class="pdf-files">
+        <span data-filename="Tarea02.pdf"
+              data-pdf-url="img/Tarea02%20Cloud-native%20o%20Cloud-enabled.pdf"></span>
       </div>
     </div>
+
+    <a class="btn open-modal">Ver documento</a>
+  </article>
+
+  <!-- TAREA 3 -->
+  <article class="card">
+    <div class="head">
+      <div class="icon"><i class="fa-solid fa-diagram-project"></i></div>
+      <h3 style="margin:0">Tarea 3</h3>
+    </div>
+    <p class="desc">Evidencias y diagrama del ejercicio.</p>
+    <div class="tags"><span class="tagchip">Imagen</span></div>
+
+    <div class="modal-info" style="display:none">
+      <!-- imagen en /img -->
+      <div class="practice-image" data-image-url="img/Tarea03.png"></div>
+    </div>
+
+    <a class="btn open-modal">Ver evidencia</a>
+  </article>
+</div>
+
   </section>
 
   <!-- PROYECTO FINAL -->
   <section id="proyecto">
-    <div class="wrap">
-      <h2 class="h2">Proyecto Final</h2>
-      <p class="sub">Documentación y evidencias del proyecto final.</p>
-
-      <div class="grid">
-        <article class="card">
-          <div class="head"><div class="icon"><i class="fa-solid fa-heart-pulse"></i></div><h3 style="margin:0">Heartguard – Avance 1</h3></div>
-          <p class="desc">Arquitectura inicial, módulos y plan.</p>
-          <div class="tags"><span class="tagchip">Reporte</span><span class="tagchip">PDF</span></div>
-
-          <div class="modal-info" style="display:none">
-            <div class="learnings">Diseño de microservicios, colas y sensores.</div>
-            <div class="pdf-files">
-              <span data-filename="ReporteFormal_Avance1.pdf" data-pdf-url="img/ReporteFormal_Avance1.pdf"></span>
-            </div>
-          </div>
-
-          <a class="btn open-modal">Ver documento</a>
-        </article>
-      </div>
+    <div class="grid">
+  <article class="card">
+    <div class="head">
+      <div class="icon"><i class="fa-solid fa-heart-pulse"></i></div>
+      <h3 style="margin:0">Heartguard – Avance 1</h3>
     </div>
+    <p class="desc">Reporte formal del primer avance (arquitectura y plan).</p>
+    <div class="tags"><span class="tagchip">Reporte</span><span class="tagchip">PDF</span></div>
+
+    <div class="modal-info" style="display:none">
+      <div class="learnings">Diseño, módulos, riesgos y siguientes pasos.</div>
+      <!-- PDF con espacios → URL codificada -->
+      <div class="pdf-files">
+        <span data-filename="Reporte Formal - Avance 1.pdf"
+              data-pdf-url="img/Reporte%20Formal%20-%20Avance%201.pdf"></span>
+      </div>
+      <!-- (opcional) link al repo del proyecto final si lo tienes -->
+      <div class="github-link"
+           data-url="https://github.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/tree/main/proyecto-final"></div>
+    </div>
+
+    <a class="btn open-modal">Ver documento</a>
+  </article>
+</div>
+
   </section>
 
-  <footer>© <span id="yr"></span> Pablo Celedón – Portafolio de Integración</footer>
+  <footer>© <span id="yr"></span> Pablo Celedón – Portafolio de Integración 2025</footer>
 
   <!-- MODAL -->
   <div class="modal" id="modal">
@@ -377,4 +415,5 @@
   </script>
 </body>
 </html>
+
 
