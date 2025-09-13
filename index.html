@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pablo Celedón – Portafolio de Integración</title>
+
+  <!-- Fuente + Iconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0f1221; --panel:#131735; --ink:#e9edff; --muted:#a8b2de;
+      --line:rgba(255,255,255,.08); --brand:#5c8dff; --brand-2:#8db4ff;
+    }
+    *{box-sizing:border-box} html,body{margin:0}
+    body{background:var(--bg);color:var(--ink);font-family:Poppins,system-ui,Segoe UI,Roboto,Arial}
+    a{color:inherit}
+    /* NAV */
+    .nav{position:sticky;top:0;z-index:50;background:rgba(15,18,33,.7);backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid var(--line)}
+    .nav .wrap{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+    .brand{font-weight:800;letter-spacing:.3px}
+    .menu a{margin-left:18px;text-decoration:none;color:#cfd6ff}
+    .menu a:hover{color:#fff}
+    /* HERO */
+    .hero{padding:72px 20px 48px;background:radial-gradient(1200px 500px at 20% -10%, #1b2150 0%, transparent 60%)}
+    .hero .wrap{max-width:900px;margin:auto;text-align:center}
+    .title{font-size:clamp(32px,4.2vw,56px);line-height:1.1;margin:6px 0 10px;font-weight:800}
+    .tag{color:var(--brand-2);font-weight:600}
+    .lead{color:var(--muted);max-width:700px;margin:14px auto 24px}
+    .cta{display:inline-block;padding:10px 18px;border-radius:999px;background:var(--brand);color:#fff;text-decoration:none}
+    .cta:hover{filter:brightness(1.1)}
+    /* SECTION */
+    section{padding:56px 20px;border-top:1px solid var(--line)}
+    .wrap{max-width:1100px;margin:auto}
+    .h2{font-weight:800;margin:0 0 6px}
+    .sub{color:var(--muted);margin:0 0 26px}
+    /* GRID */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;min-height:280px}
+    .card:hover{transform:translateY(-3px);transition:.18s ease;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .head{display:flex;gap:12px;align-items:center;margin-bottom:8px}
+    .icon{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#202656;border:1px solid var(--line)}
+    .desc{color:var(--muted);margin:8px 0 14px;flex:1}
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+    .tagchip{background:#21264a;border:1px solid var(--line);color:#cfd6ff;padding:2px 10px;border-radius:999px;font-size:.82rem}
+    .btn{display:inline-block;text-align:center;border:1px solid var(--brand);color:var(--brand);padding:8px 12px;border-radius:10px;text-decoration:none}
+    .btn:hover{background:var(--brand);color:#fff}
+    /* MODAL */
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;z-index:100}
+    .modal.open{display:flex}
+    .sheet{width:min(920px,92vw);max-height:92vh;overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:16px}
+    .sheet .hd{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:1px solid var(--line)}
+    .x{font-size:22px;cursor:pointer;color:#cfd6ff}
+    .body{padding:18px}
+    .muted{color:var(--muted)}
+    .codebox{border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-top:14px}
+    .tabs{display:flex;gap:8px;padding:10px;border-bottom:1px solid var(--line);background:#0b0e24}
+    .tab{font-size:.85rem;border:1px solid var(--line);background:#12163a;color:#cfd6ff;border-radius:8px;padding:6px 10px;cursor:pointer}
+    .tab.active{background:var(--brand);border-color:var(--brand);color:#fff}
+    pre{margin:0;padding:14px;max-height:320px;overflow:auto;background:#0b0e24}
+    iframe{width:100%;height:520px;border:0;border-top:1px solid var(--line)}
+    .btn-copy{margin-left:auto;border:1px solid var(--line);background:#0b0e24;color:#cfd6ff;border-radius:8px;padding:6px 10px;cursor:pointer}
+    /* FOOTER */
+    footer{padding:30px 20px;text-align:center;color:#9aa5d1}
+    @media (max-width:740px){ .menu{display:none} }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <div class="nav">
+    <div class="wrap">
+      <div class="brand">Pablo Celedón – 597730</div>
+      <div class="menu">
+        <a href="#about">Acerca de</a>
+        <a href="#practicas">Prácticas</a>
+        <a href="#tareas">Tareas</a>
+        <a href="#proyecto">Proyecto Final</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero" id="inicio">
+    <div class="wrap" style="text-align:center">
+      <h1 class="title">Portafolio de Integración</h1>
+      <div class="tag">“Si solo haces lo que sabes hacer, nunca serás más de lo que eres ahora.”</div>
+      <p class="lead">Espacio para documentar mis prácticas, tareas y proyecto final. Todo el contenido vive en GitHub y se despliega aquí con <code>git pull</code> en el servidor.</p>
+      <a class="cta" href="#practicas">Ver mis proyectos</a>
+    </div>
+  </header>
+
+  <!-- SOBRE MI -->
+  <section id="about">
+    <div class="wrap">
+      <h2 class="h2">Sobre mí</h2>
+      <p class="sub">ITC en formación. Me enfoco en desarrollo de software (Python, Android, C) e integración de sistemas con buenas prácticas, documentación y despliegue sencillo.</p>
+    </div>
+  </section>
+
+  <!-- PRÁCTICAS -->
+  <section id="practicas">
+    <div class="wrap">
+      <h2 class="h2">Práctica guiada</h2>
+      <p class="sub">Proyecto(s) desarrollados durante el curso.</p>
+
+      <div class="grid">
+        <!-- CARD 1 -->
+        <article class="card">
+          <div class="head">
+            <div class="icon"><i class="fa-solid fa-cogs"></i></div>
+            <h3 style="margin:0">Práctica 1: Clasificador de Servicios Cloud</h3>
+          </div>
+          <p class="desc">Clasificador de descripciones usando una API de IA (OpenRouter). Limpieza de texto, prompt claro y control de costos.</p>
+          <div class="tags">
+            <span class="tagchip">Python</span><span class="tagchip">Requests</span><span class="tagchip">OpenRouter</span>
+          </div>
+
+          <!-- Info oculta para el modal -->
+          <div class="modal-info" style="display:none">
+            <div class="objective">Construir un clasificador simple que agrupe servicios cloud en categorías.</div>
+            <div class="intro">Se integra OpenRouter con un prompt específico y manejo de claves por entorno.</div>
+            <div class="development">Estructura en funciones, validación de entrada y logging básico.</div>
+            <div class="conclusion">Base lista para extender a más etiquetas y mejorar el preprocesamiento.</div>
+            <div class="learnings">Integración con APIs, prompts, control de latencia/costo.</div>
+            <div class="github-link" data-url="https://github.com/PABLO_USER/Practica1-CloudClassifier"></div>
+            <div class="practice-image" data-image-url="img/practica1.png"></div>
+            <div class="code-files">
+              <span data-filename="clasificador.py" data-raw-url="https://raw.githubusercontent.com/PABLO_USER/Practica1-CloudClassifier/main/clasificador.py"></span>
+              <span data-filename="requirements.txt" data-raw-url="https://raw.githubusercontent.com/PABLO_USER/Practica1-CloudClassifier/main/requirements.txt"></span>
+            </div>
+          </div>
+
+          <a class="btn open-modal">Ver detalles y código</a>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="card">
+          <div class="head">
+            <div class="icon"><i class="fa-solid fa-robot"></i></div>
+            <h3 style="margin:0">Práctica 2: Chat Flask + Ollama</h3>
+          </div>
+          <p class="desc">Interfaz tipo chat con selección de modelo local (DeepSeek, Llama 3, Phi 3), API REST y despliegue en Docker.</p>
+          <div class="tags">
+            <span class="tagchip">Flask</span><span class="tagchip">Ollama</span><span class="tagchip">Docker</span>
+          </div>
+
+          <div class="modal-info" style="display:none">
+            <div class="objective">Crear un chat web usando modelos locales vía Ollama.</div>
+            <div class="intro">Solución on-prem para evitar dependencias externas.</div>
+            <div class="development">API Flask + UI HTML/CSS/JS, estados, errores y compose.</div>
+            <div class="conclusion">Lista para añadir streaming, historiales y auth.</div>
+            <div class="learnings">APIs REST, contenerización y UX simple.</div>
+            <div class="github-link" data-url="https://github.com/PABLO_USER/Flask-Ollama-Chat"></div>
+            <div class="practice-image" data-image-url="img/practica2.png"></div>
+            <div class="code-files">
+              <span data-filename="app.py" data-raw-url="https://raw.githubusercontent.com/PABLO_USER/Flask-Ollama-Chat/main/app.py"></span>
+              <span data-filename="templates/index.html" data-raw-url="https://raw.githubusercontent.com/PABLO_USER/Flask-Ollama-Chat/main/templates/index.html"></span>
+              <span data-filename="docker-compose.yml" data-raw-url="https://raw.githubusercontent.com/PABLO_USER/Flask-Ollama-Chat/main/docker-compose.yml"></span>
+            </div>
+          </div>
+
+          <a class="btn open-modal">Ver detalles y código</a>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="card">
+          <div class="head">
+            <div class="icon"><i class="fa-solid fa-book"></i></div>
+            <h3 style="margin:0">Práctica 3: Biblioteca XML + XSLT</h3>
+          </div>
+          <p class="desc">XML para datos de libros, XSLT para vistas y búsqueda por ISBN.</p>
+          <div class="tags">
+            <span class="tagchip">XML</span><span class="tagchip">XSLT</span><span class="tagchip">CSS</span>
+          </div>
+
+          <div class="modal-info" style="display:none">
+            <div class="objective">Modelar una biblioteca digital y transformarla con XSLT.</div>
+            <div class="intro">Estructura de datos y plantillas de presentación.</div>
+            <div class="development">Hojas XSLT + estilos, consultas y filtros.</div>
+            <div class="conclusion">Demostración completa de XML/XSLT en web.</div>
+            <div class="learnings">Datos estructurados y transformación.</div>
+            <div class="github-link" data-url="https://github.com/PABLO_USER/XML-Library-XSLT"></div>
+            <div class="practice-images">
+              <span data-image-url="img/practica3a.png"></span>
+              <span data-image-url="img/practica3b.png"></span>
+            </div>
+            <div class="code-files">
+              <span data-filename="libros.xml" data-raw-url="https://raw.githubusercontent.com/PABLO_USER/XML-Library-XSLT/main/libros.xml"></span>
+              <span data-filename="libros.xsl" data-raw-url="https://raw.githubusercontent.com/PABLO_USER/XML-Library-XSLT/main/libros.xsl"></span>
+              <span data-filename="estilos.css" data-raw-url="https://raw.githubusercontent.com/PABLO_USER/XML-Library-XSLT/main/estilos.css"></span>
+            </div>
+          </div>
+
+          <a class="btn open-modal">Ver detalles y código</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAREAS -->
+  <section id="tareas">
+    <div class="wrap">
+      <h2 class="h2">Tareas</h2>
+      <p class="sub">Investigaciones y reportes (PDFs).</p>
+
+      <div class="grid">
+        <article class="card">
+          <div class="head"><div class="icon"><i class="fa-solid fa-file-pdf"></i></div><h3 style="margin:0">Tarea 1: Modelos de servicio</h3></div>
+          <p class="desc">Resumen de SaaS, PaaS, IaaS y FaaS con comparativas.</p>
+          <div class="tags"><span class="tagchip">Cloud</span><span class="tagchip">PDF</span></div>
+
+          <div class="modal-info" style="display:none">
+            <div class="learnings">Arquitecturas, escalabilidad y trade-offs.</div>
+            <div class="pdf-files">
+              <span data-filename="Tarea1.pdf" data-pdf-url="img/Tarea1.pdf"></span>
+            </div>
+          </div>
+
+          <a class="btn open-modal">Ver detalles y documentación</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTO FINAL -->
+  <section id="proyecto">
+    <div class="wrap">
+      <h2 class="h2">Proyecto Final</h2>
+      <p class="sub">Documentación y evidencias del proyecto final.</p>
+
+      <div class="grid">
+        <article class="card">
+          <div class="head"><div class="icon"><i class="fa-solid fa-heart-pulse"></i></div><h3 style="margin:0">Heartguard – Avance 1</h3></div>
+          <p class="desc">Arquitectura inicial, módulos y plan.</p>
+          <div class="tags"><span class="tagchip">Reporte</span><span class="tagchip">PDF</span></div>
+
+          <div class="modal-info" style="display:none">
+            <div class="learnings">Diseño de microservicios, colas y sensores.</div>
+            <div class="pdf-files">
+              <span data-filename="ReporteFormal_Avance1.pdf" data-pdf-url="img/ReporteFormal_Avance1.pdf"></span>
+            </div>
+          </div>
+
+          <a class="btn open-modal">Ver documento</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer>© <span id="yr"></span> Pablo Celedón – Portafolio de Integración</footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="sheet">
+      <div class="hd">
+        <strong id="mTitle">Detalle</strong>
+        <div style="display:flex;gap:8px;align-items:center">
+          <a id="mRepo" class="btn" target="_blank" rel="noopener" style="display:none">Ver repositorio</a>
+          <button class="btn-copy" id="copyBtn" title="Copiar código"><i class="fa-regular fa-copy"></i></button>
+          <span class="x" id="mClose">&times;</span>
+        </div>
+      </div>
+      <div class="body">
+        <p class="muted" id="mDesc"></p>
+        <p id="mObjective"></p>
+        <p id="mIntro"></p>
+        <p id="mDev"></p>
+        <p id="mConc"></p>
+        <p class="muted" id="mLearn"></p>
+
+        <div id="mImages" style="display:none;margin:14px 0"></div>
+
+        <div class="codebox" id="codeBox" style="display:none">
+          <div class="tabs" id="tabs"></div>
+          <pre id="codeArea">Selecciona un archivo...</pre>
+          <iframe id="pdfArea" style="display:none"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
+    yr.textContent=new Date().getFullYear();
+
+    // Abrir modal
+    $$('.open-modal').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        const card = btn.closest('.card');
+        const info = card.querySelector('.modal-info');
+        modal.classList.add('open');
+
+        // Textos
+        mTitle.textContent = card.querySelector('h3').textContent;
+        mDesc.textContent  = card.querySelector('.desc')?.textContent ?? '';
+        mObjective.textContent = info.querySelector('.objective')?.textContent ?? '';
+        mIntro.textContent     = info.querySelector('.intro')?.textContent ?? '';
+        mDev.textContent       = info.querySelector('.development')?.textContent ?? '';
+        mConc.textContent      = info.querySelector('.conclusion')?.textContent ?? '';
+        mLearn.textContent     = info.querySelector('.learnings')?.textContent ?? '';
+
+        // Repo
+        const repoUrl = info.querySelector('.github-link')?.dataset.url;
+        if (repoUrl){ mRepo.href=repoUrl; mRepo.style.display='inline-block'; }
+        else { mRepo.style.display='none'; }
+
+        // Imágenes
+        const imgsBox = $('#mImages'); imgsBox.innerHTML='';
+        const single = info.querySelector('.practice-image')?.dataset.imageUrl;
+        const multiple = info.querySelectorAll('.practice-images span');
+        if (single){
+          const img=new Image(); img.src=single; img.style.cssText='max-width:100%;border:1px solid var(--line);border-radius:10px';
+          imgsBox.appendChild(img); imgsBox.style.display='block';
+        }else if(multiple.length){
+          multiple.forEach(s=>{
+            const img=new Image(); img.src=s.dataset.imageUrl; img.style.cssText='max-width:100%;border:1px solid var(--line);border-radius:10px;margin-bottom:10px';
+            imgsBox.appendChild(img);
+          });
+          imgsBox.style.display='block';
+        }else{ imgsBox.style.display='none'; }
+
+        // Archivos de código o PDFs
+        const codeTabs = info.querySelectorAll('.code-files span');
+        const pdfTabs  = info.querySelectorAll('.pdf-files span');
+        tabs.innerHTML='';
+
+        function showCode(url){
+          codeArea.style.display='block'; pdfArea.style.display='none';
+          codeArea.textContent='Cargando...';
+          fetch(url).then(r=>r.text()).then(t=>codeArea.textContent=t).catch(()=>codeArea.textContent='Error al cargar el archivo.');
+        }
+        function showPDF(url){
+          codeArea.style.display='none'; pdfArea.style.display='block'; pdfArea.src=url;
+        }
+
+        if(codeTabs.length){
+          codeBox.style.display='block';
+          codeTabs.forEach((s,i)=>{
+            const b=document.createElement('button');
+            b.className='tab'+(i===0?' active':''); b.textContent=s.dataset.filename; b.onclick=()=>{
+              $('#tabs .active')?.classList.remove('active'); b.classList.add('active'); showCode(s.dataset.rawUrl);
+            };
+            tabs.appendChild(b); if(i===0) showCode(s.dataset.rawUrl);
+          });
+          copyBtn.style.display='inline-block';
+        } else if (pdfTabs.length){
+          codeBox.style.display='block';
+          pdfTabs.forEach((s,i)=>{
+            const b=document.createElement('button');
+            b.className='tab'+(i===0?' active':''); b.textContent=s.dataset.filename; b.onclick=()=>{
+              $('#tabs .active')?.classList.remove('active'); b.classList.add('active'); showPDF(s.dataset.pdfUrl);
+            };
+            tabs.appendChild(b); if(i===0) showPDF(s.dataset.pdfUrl);
+          });
+          copyBtn.style.display='none';
+        } else {
+          codeBox.style.display='none';
+          copyBtn.style.display='none';
+        }
+      });
+    });
+
+    // Cerrar modal
+    mClose.onclick=()=>modal.classList.remove('open');
+    modal.addEventListener('click',e=>{ if(e.target===modal) modal.classList.remove('open'); });
+
+    // Copiar
+    copyBtn.onclick=async()=>{
+      try{ await navigator.clipboard.writeText(codeArea.textContent||''); copyBtn.innerHTML='<i class="fa-solid fa-check"></i>'; setTimeout(()=>copyBtn.innerHTML='<i class="fa-regular fa-copy"></i>',1200);}
+      catch{}
+    }
+  </script>
+</body>
+</html>
