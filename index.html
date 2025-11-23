@@ -405,6 +405,658 @@
   </section>
 
 
+
+ <!-- PRÁCTICAS PARCIAL 3 -->
+    <section id="practicas">
+    <div class="wrap">
+      <h2 class="h2">Práctica guiada PARCIAL 3</h2>
+      <p class="sub">Proyecto(s) desarrollados durante el curso en 2do Parcial.</p>
+      <div class="grid">
+        <!-- CARD 1 -->
+                <!-- ======= EJERCICIO GUIADO 08 (PLANTILLA) ======= -->
+        <!-- Duplica este bloque y solo cambia el número/ruta -->
+        <article class="card">
+        <div class="head">
+            <div class="icon"><i class="fa-solid fa-terminal"></i></div>
+            <h3 style="margin:0">Ejercicio Guiado 08 Locust JWT </h3>
+        </div>
+        <p class="desc">
+        Prueba de carga del microservicio de Libros utilizando Locust para simular múltiples usuarios concurrentes y evaluar su rendimiento. Esta práctica analiza cómo responde el servicio ante tráfico elevado, midiendo tiempos de respuesta, errores y estabilidad general. El objetivo es comprender el comportamiento del microservicio bajo estrés, identificar posibles cuellos de botella y validar su capacidad de escalabilidad.
+        </p>
+        <div class="tags"><span class="tagchip">Locust</span><span class="tagchip">JWT</span><span class="tagchip">JSON</span><span class="tagchip">MARIADB</span></div>
+        <div class="modal-info" style="display:none">
+
+        <div class="objective">
+          Objetivo: Evaluar el comportamiento y la escalabilidad del microservicio de libros bajo carga con Locust.
+        </div>
+
+        <div class="intro">
+          Introducción: Se configuró Locust para generar tráfico simulado hacia los endpoints del microservicio, midiendo tiempos de respuesta y errores.
+        </div>
+
+        <div class="development">
+          Desarrollo: Se implementó un archivo locustfile.py con tareas de lectura y escritura; se realizaron pruebas con distintos usuarios simultáneos.
+        </div>
+
+        <div class="conclusion">
+          Conclusión: Las pruebas permitieron detectar endpoints lentos y confirmar la estabilidad general del servicio.
+        </div>
+
+        <div class="learnings">
+          Aprendizajes: Diseño de escenarios de carga, interpretación de métricas y optimización de microservicios REST.
+        </div>
+
+          <div class="github-link"
+              data-url="https://github.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/tree/main/ejercicios-guiados/EjercicioGuiado08"></div> 
+
+          <!-- Varias imágenes (usa la carpeta /img del sitio personal)  -->
+          <div class="practice-images">
+            <span data-image-url="img/EjercicioGuiado08_01.png"></span>
+            <span data-image-url="img/EjercicioGuiado08_02.png"></span>
+            <span data-image-url="img/EjercicioGuiado08_03.png"></span>
+            <span data-image-url="img/EjercicioGuiado08_06.png"></span>
+            <span data-image-url="img/EjercicioGuiado08_07.png"></span>
+            <span data-image-url="img/EjercicioGuiado08_08.png"></span>
+            <span data-image-url="img/EjercicioGuiado08_09.png"></span>
+            <span data-image-url="img/EjercicioGuiado08_10.png"></span>
+          </div> 
+
+          <!-- pestañas de código -->
+          <!-- SOLO estos 3 archivos en pestañas (usa RAW con /main/) -->
+           <div class="code-files">
+            <span data-filename="locustfile.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado08/locustfile.py"></span>
+            <span data-filename="locust_config.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado08/locust_config.py"></span>
+          </div>
+        </div> 
+
+        <a class="btn open-modal">Ver detalles y código</a>
+        </article>
+
+        <!-- ======= EJERCICIO GUIADO 09 (PLANTILLA) ======= -->
+        <!-- Duplica este bloque y solo cambia el número/ruta -->
+        <article class="card">
+        <div class="head">
+            <div class="icon"><i class="fa-solid fa-terminal"></i></div>
+            <h3 style="margin:0">Ejercicio Guiado 09 Prueba Baseline (Locust) </h3>
+        </div>
+        <p class="desc">Prueba baseline de rendimiento aplicando una carga ligera y constante: 50 usuarios simulados durante 5 minutos. Este escenario permite evaluar el comportamiento inicial de los microservicios, revisar tiempos de respuesta y detectar posibles inconsistencias bajo tráfico controlado.</p>
+        <div class="tags"><span class="tagchip">LOCUST</span><span class="tagchip">LOADTESTING</span><span class="tagchip">MICROSERVICIOS</span><span class="tagchip">PYTHON</span></div>
+
+        <div class="modal-info" style="display:none">
+
+          <div class="objective">
+            Objetivo: Realizar una prueba baseline con carga ligera y constante (50 usuarios durante 5 minutos) para medir tiempos de respuesta y estabilidad de los microservicios.
+          </div>
+
+          <div class="intro">
+            Introducción: Se definió un escenario de tráfico estable para obtener una línea base de rendimiento que sirva como referencia para futuras pruebas de stress o escalado.
+          </div>
+
+          <div class="development">
+            Desarrollo: Se utilizó el archivo locustfile.py para configurar usuarios y tareas en Locust. Al finalizar la ejecución se generó un reporte_baseline.html con métricas de latencia, throughput y errores.
+          </div>
+
+          <div class="conclusion">
+            Conclusión: La prueba baseline proporcionó una medición inicial del comportamiento del sistema bajo carga ligera e identificó posibles endpoints con desempeño anómalo.
+          </div>
+
+          <div class="learnings">
+            Aprendizajes: Definición de escenarios baseline en Locust, interpretación del reporte HTML, prácticas para pruebas reproducibles y recomendaciones de monitoreo durante cargas controladas.
+          </div>
+
+          <div class="github-link"
+              data-url="https://github.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/tree/main/ejercicios-guiados/EjercicioGuiado09"></div> 
+
+          <!-- Varias imágenes (usa la carpeta /img del sitio personal)  -->
+          <div class="practice-images">
+            <span data-image-url="img/EjercicioGuiado09_01.png"></span>
+            <span data-image-url="img/EjercicioGuiado09_02.png"></span>
+            <span data-image-url="img/EjercicioGuiado09_03.png"></span>
+          </div> 
+
+          <!-- pestañas de código -->
+          <!-- SOLO estos 3 archivos en pestañas (usa RAW con /main/) -->
+           <div class="code-files">
+            <span data-filename="locustfile.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado09/locustfile.py"></span>
+          </div>
+        </div> 
+
+        <a class="btn open-modal">Ver detalles y código</a>
+        </article>
+
+        <!-- ======= EJERCICIO GUIADO 10 (PLANTILLA) ======= -->
+        <!-- Duplica este bloque y solo cambia el número/ruta -->
+        <article class="card">
+        <div class="head">
+            <div class="icon"><i class="fa-solid fa-terminal"></i></div>
+            <h3 style="margin:0">Ejercicio Guiado 10 Prueba Smoke (Locust)</h3>
+        </div>
+        <p class="desc">Prueba smoke de rendimiento que utiliza entre 1 y 5 usuarios simulados para verificar de forma rápida la disponibilidad de los microservicios y asegurar que responden correctamente a operaciones básicas antes de ejecutar pruebas más pesadas.</p>
+        <div class="tags"><span class="tagchip">LOCUST</span><span class="tagchip">SMOKE TEST</span><span class="tagchip">MICROSERVICIOS</span><span class="tagchip">PYTHON</span></div>
+
+        <div class="modal-info" style="display:none">
+
+          <div class="objective">
+            Objetivo: Verificar rápidamente la disponibilidad y comportamiento básico de los endpoints clave mediante una prueba smoke con 1–5 usuarios concurrentes.
+          </div>
+
+          <div class="intro">
+            Introducción: Las pruebas smoke permiten confirmar que el servicio responde y que las rutas críticas están operativas antes de ejecutar pruebas más intensivas o desplegar cambios en producción.
+          </div>
+
+          <div class="development">
+            Desarrollo: Se incluye `locustfile.py` que define usuarios y tareas ligeras (ping, listar, obtener por ID). La prueba se ejecuta con baja concurrencia para validar latencias iniciales y verificar que no existan errores obvios en los endpoints.
+          </div>
+
+          <div class="conclusion">
+            Conclusión: La prueba smoke confirma la salud mínima del servicio y sirve como control rápido previo a pruebas más profundas; cualquier fallo detectado en esta etapa indica problemas que deben resolverse antes de escalar pruebas.
+          </div>
+
+          <div class="learnings">
+            Aprendizajes Clave: Cómo diseñar tests smoke reproducibles, configurar Locust para baja concurrencia, interpretar respuestas básicas y automatizar chequeos rápidos de disponibilidad.
+          </div>
+
+          <div class="github-link"
+              data-url="https://github.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/tree/main/ejercicios-guiados/EjercicioGuiado10"></div> 
+
+          <!-- Varias imágenes (usa la carpeta /img del sitio personal)  -->
+          <div class="practice-images">
+            <span data-image-url="img/EjercicioGuiado10_01.png"></span>
+            <span data-image-url="img/EjercicioGuiado10_02.png"></span>
+            <span data-image-url="img/EjercicioGuiado10_03.png"></span>
+          </div> 
+
+          <!-- pestañas de código -->
+          <!-- SOLO estos 3 archivos en pestañas (usa RAW con /main/) -->
+           <div class="code-files">
+            <span data-filename="locustfile.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado10/locustfile.py"></span>
+          </div>
+        </div> 
+
+        <a class="btn open-modal">Ver detalles y código</a>
+        </article>
+
+        <!-- ======= EJERCICIO GUIADO 11 (PLANTILLA) ======= -->
+        <!-- Duplica este bloque y solo cambia el número/ruta -->
+        <article class="card">
+        <div class="head">
+            <div class="icon"><i class="fa-solid fa-terminal"></i></div>
+            <h3 style="margin:0">Ejercicio Guiado 11 Read-heavy vs Write-heavy (Locust)</h3>
+        </div>
+        <p class="desc">Prueba para ajustar la proporción de operaciones GET vs POST y comparar rendimiento en escenarios read-heavy y write-heavy.</p>
+        <div class="tags"><span class="tagchip">LOCUST</span><span class="tagchip">BENCHMARK</span><span class="tagchip">MICROSERVICIOS</span><span class="tagchip">PYTHON</span></div>
+
+        <div class="modal-info" style="display:none">
+
+          <div class="objective">
+            Objetivo: Comparar el rendimiento del servicio bajo distintas proporciones de operaciones de lectura y escritura para identificar impactos sobre latencia y errores.
+          </div>
+
+          <div class="intro">
+            Introducción: Se definen escenarios donde la carga se inclina hacia lecturas (read-heavy) o escrituras (write-heavy) modificando las tareas de Locust para ajustar la probabilidad de GET/POST.
+          </div>
+
+          <div class="development">
+            Desarrollo: En el repositorio se incluye `locustfile.py` y `micIn.py` que definen los usuarios y las funciones de interacción con los endpoints. Se ejecutan pruebas con distintas proporciones (por ejemplo, 90/10 read/write y 30/70 read/write) y se recogen métricas para comparar throughput, latencia y tasa de errores.
+          </div>
+
+          <div class="conclusion">
+            Conclusión: Las pruebas permiten identificar cómo cambian las métricas según la naturaleza de la carga y ayudan a priorizar optimizaciones en rutas críticas (por ejemplo, optimizar consultas, aplicar caching o mejoras en persistencia).
+          </div>
+
+          <div class="learnings">
+            Aprendizajes Clave: Diseño de escenarios read/write en Locust, interpretación comparativa de resultados, recomendaciones para balanceo de operaciones y ajustes de arquitectura según patrón de carga.
+          </div>
+
+          <div class="github-link"
+              data-url="https://github.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/tree/main/ejercicios-guiados/EjercicioGuiado11"></div> 
+
+          <!-- Varias imágenes (usa la carpeta /img del sitio personal)  -->
+          <div class="practice-images">
+            <span data-image-url="img/EjercicioGuiado11_01.png"></span>
+            <span data-image-url="img/EjercicioGuiado11_02.png"></span>
+          </div> 
+
+          <!-- pestañas de código -->
+          <!-- SOLO estos 3 archivos en pestañas (usa RAW con /main/) -->
+           <div class="code-files">
+            <span data-filename="locustfile.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado11/locustfile.py"></span>
+            <span data-filename="micIn.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado11/micIn.py"></span>
+          </div>
+        </div> 
+
+        <a class="btn open-modal">Ver detalles y código</a>
+        </article>
+
+        <!-- ======= EJERCICIO GUIADO 12 (PLANTILLA) ======= -->
+        <!-- Duplica este bloque y solo cambia el número/ruta -->
+        <article class="card">
+        <div class="head">
+            <div class="icon"><i class="fa-solid fa-terminal"></i></div>
+            <h3 style="margin:0">Ejercicio Guiado 12 Ramp-up / Ramp-down (Locust) </h3>
+        </div>
+        <p class="desc">Prueba con crecimiento y decrecimiento gradual usando `LoadTestShape` para simular ramp-up y ramp-down de usuarios.</p>
+        <div class="tags"><span class="tagchip">LOCUST</span><span class="tagchip">LOADTESTSHAPE</span><span class="tagchip">MICROSERVICIOS</span><span class="tagchip">PYTHON</span></div>
+
+        <div class="modal-info" style="display:none">
+
+          <div class="objective">
+            Objetivo: Simular un patrón de carga gradual para observar cómo responde el sistema durante aumentos y descensos de tráfico controlados.
+          </div>
+
+          <div class="intro">
+            Introducción: Se utiliza `LoadTestShape` de Locust para definir una curva de usuarios que sube hasta un pico y luego baja, reproduciendo escenarios de tráfico realistas y permitiendo analizar estabilidad y recuperación.
+          </div>
+
+          <div class="development">
+            Desarrollo: El repositorio incluye `locustfile.py` y `locust_slow.py` (ejemplo de `LoadTestShape`) que definen las tareas y la forma de la carga. Se ejecutan pruebas completas registrando métricas de latencia, errores y throughput durante todo el ciclo de carga.
+          </div>
+
+          <div class="conclusion">
+            Conclusión: La prueba permite identificar puntos de fallo relacionados con cambios rápidos en la carga, verificar elasticidad y planear estrategias de escalado automático o mitigación.
+          </div>
+
+          <div class="learnings">
+            Aprendizajes Clave: Cómo diseñar curvas de carga con `LoadTestShape`, interpretar el impacto de ramp-up/ramp-down en la infraestructura y ajustar políticas de escalado y backpressure.
+          </div>
+ 
+          <div class="github-link"
+              data-url="https://github.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/tree/main/ejercicios-guiados/EjercicioGuiado12"></div> 
+
+          <!-- Varias imágenes (usa la carpeta /img del sitio personal)  -->
+          <div class="practice-images">
+            <span data-image-url="img/EjercicioGuiado12_01.png"></span>
+            <span data-image-url="img/EjercicioGuiado12_02.png"></span>
+          </div> 
+
+          <!-- pestañas de código -->
+          <!-- SOLO estos 3 archivos en pestañas (usa RAW con /main/) -->
+           <div class="code-files">
+            <span data-filename="locustfile.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado12/locustfile.py"></span>
+            <span data-filename="locust_slow.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado12/locust_slow.py"></span>
+          </div>
+        </div> 
+
+        <a class="btn open-modal">Ver detalles y código</a>
+        </article>
+
+<!-- ======= EJERCICIO GUIADO 13 (PLANTILLA) ======= -->
+        <!-- Duplica este bloque y solo cambia el número/ruta -->
+        <article class="card">
+        <div class="head">
+            <div class="icon"><i class="fa-solid fa-terminal"></i></div>
+            <h3 style="margin:0">Ejercicio Guiado 13 Prueba Spike (Locust) </h3>
+        </div>
+        <p class="desc">Prueba spike: incremento abrupto de usuarios (por ejemplo, de 200 a 1000 en 10 segundos) para evaluar la resiliencia del sistema.</p>
+
+        <div class="tags"><span class="tagchip">LOCUST</span><span class="tagchip">SPIKE TEST</span><span class="tagchip">MICROSERVICIOS</span><span class="tagchip">PYTHON</span></div>
+
+        <div class="modal-info" style="display:none">
+
+          <div class="objective">
+            Objetivo: Evaluar cómo responde la plataforma ante incrementos súbitos y masivos de tráfico, midiendo degradación, errores y tiempos de recuperación.
+          </div>
+
+          <div class="intro">
+            Introducción: Las pruebas spike simulan condiciones donde un aumento brusco de usuarios puede provocar sobrecarga; son útiles para validar límites, políticas de throttling y mecanismos de autoscaling.
+          </div>
+
+          <div class="development">
+            Desarrollo: El repositorio contiene `locust_spike.py` que define un escenario con un rápido aumento de usuarios. Se ejecuta la prueba y se capturan métricas clave (latencia, errores, throughput) para identificar fallos y puntos de saturación.
+          </div>
+
+          <div class="conclusion">
+            Conclusión: La prueba muestra el comportamiento del sistema frente a cargas inesperadas y ayuda a definir medidas de mitigación como límites de conexión, colas y escalado automático agresivo.
+          </div>
+
+          <div class="learnings">
+            Aprendizajes Clave: Cómo diseñar pruebas spike reproducibles, interpretar picos de latencia y error, y aplicar estrategias de mitigación y escalado ante incrementos abruptos.
+          </div>
+
+          <div class="github-link"
+              data-url="https://github.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/tree/main/ejercicios-guiados/EjercicioGuiado13"></div> 
+
+          <!-- Varias imágenes (usa la carpeta /img del sitio personal)  -->
+          <div class="practice-images">
+            <span data-image-url="img/EjercicioGuiado13_01.png"></span>
+            <span data-image-url="img/EjercicioGuiado13_02.png"></span>
+          </div> 
+
+          <!-- pestañas de código -->
+          <!-- SOLO estos 3 archivos en pestañas (usa RAW con /main/) -->
+           <div class="code-files">
+            <span data-filename="locust_spike.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado13/locust_spike.py"></span>
+          </div>
+        </div> 
+
+        <a class="btn open-modal">Ver detalles y código</a>
+        </article>
+
+
+        <!-- ======= EJERCICIO GUIADO 14 (PLANTILLA) ======= -->
+        <!-- Duplica este bloque y solo cambia el número/ruta -->
+        <article class="card">
+        <div class="head">
+            <div class="icon"><i class="fa-solid fa-terminal"></i></div>
+            <h3 style="margin:0">Ejercicio Guiado 14 Prueba Soak (Locust) </h3>
+        </div>
+        <p class="desc">Prueba soak: carga sostenida moderada durante al menos 30 minutos para identificar degradación, fugas de recursos y estabilidad a largo plazo.</p>
+        <div class="tags"><span class="tagchip">LOCUST</span><span class="tagchip">SOAK TEST</span><span class="tagchip">MICROSERVICIOS</span><span class="tagchip">PYTHON</span></div>
+
+        <div class="modal-info" style="display:none">
+
+          <div class="objective">
+            Objetivo: Evaluar la estabilidad del sistema bajo una carga sostenida moderada (>=30 minutos) para detectar memory leaks, degradación y problemas de estabilidad a largo plazo.
+          </div>
+
+          <div class="intro">
+            Introducción: Las pruebas soak permiten verificar el comportamiento del sistema en periodos prolongados y son clave para identificar problemas que no aparecen en pruebas cortas o de pico.
+          </div>
+
+          <div class="development">
+            Desarrollo: El repositorio incluye `locust_soak.py` que define el escenario de carga sostenida. Se ejecuta la prueba durante al menos 30 minutos y se monitorizan métricas como latencia, throughput, uso de memoria y errores para analizar tendencias.
+          </div>
+
+          <div class="conclusion">
+            Conclusión: La prueba soak ayuda a identificar degradación progresiva y fugas de recursos; los resultados permiten planear mantenimiento, ajustes de recursos y mejoras en la gestión de memoria y conexiones.
+          </div>
+
+          <div class="learnings">
+            Aprendizajes Clave: Cómo diseñar pruebas soak reproducibles, monitoreo de métricas a largo plazo, detección de fugas de recursos y estrategias para mitigar degradación en entornos productivos.
+          </div>
+
+          <div class="github-link"
+              data-url="https://github.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/tree/main/ejercicios-guiados/EjercicioGuiado14"></div> 
+
+          <!-- Varias imágenes (usa la carpeta /img del sitio personal)  -->
+          <div class="practice-images">
+            <span data-image-url="img/EjercicioGuiado14_01.png"></span>
+          </div> 
+
+          <!-- pestañas de código -->
+          <!-- SOLO estos 3 archivos en pestañas (usa RAW con /main/) -->
+           <div class="code-files">
+            <span data-filename="locust_soak.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado14/locust_soak.py"></span>
+          </div>
+        </div> 
+
+        <a class="btn open-modal">Ver detalles y código</a>
+        </article>
+
+
+        <!-- ======= EJERCICIO GUIADO 15 (PLANTILLA) ======= -->
+        <!-- Duplica este bloque y solo cambia el número/ruta -->
+        <article class="card">
+        <div class="head">
+            <div class="icon"><i class="fa-solid fa-terminal"></i></div>
+            <h3 style="margin:0">Ejercicio Guiado 15 Prueba Break-point (Locust) </h3>
+        </div>
+        <p class="desc">Incrementar la carga hasta encontrar el límite del servicio (punto de quiebre) y documentar fallos y comportamiento.</p>
+        <div class="tags"><span class="tagchip">LOCUST</span><span class="tagchip">BREAKPOINT TEST</span><span class="tagchip">MICROSERVICIOS</span><span class="tagchip">PYTHON</span></div>
+
+        <div class="modal-info" style="display:none">   
+          
+          <div class="objective">
+            Objetivo: Encontrar el umbral máximo de usuarios/conexiones que el servicio puede soportar antes de degradarse o fallar.
+          </div>
+
+          <div class="intro">
+            Introducción: Este ejercicio busca identificar el punto de quiebre aumentando progresivamente la carga y documentando la aparición de errores, cola de peticiones y degradación de latencia.
+          </div>
+
+          <div class="development">
+            Desarrollo: El repositorio contiene varios scripts de prueba (`locust_breakpoint.py`, `locust_breakpoint_balanced.py`, `locust_breakpoint_extended.py`, `locust_breakpoint_super_fast.py`, `locust_stress_ultimate.py`) para distintos enfoques de búsqueda del breakpoint. Se ejecutan pruebas incrementales y se registra el comportamiento del sistema.
+          </div>
+
+          <div class="conclusion">
+            Conclusión: Las pruebas permiten localizar el punto de fallo y aportar evidencia para ajustes de capacidad, optimización de código y estrategias de mitigación ante picos cercanos al punto de quiebre.
+          </div>
+
+          <div class="learnings">
+            Aprendizajes Clave: Cómo diseñar pruebas para encontrar el punto de quiebre, alternativas de scripting para diferentes estrategias (balanced/extended/super-fast) y cómo interpretar resultados para planificación de capacidad.
+          </div>
+      
+          <div class="github-link"
+              data-url="https://github.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/tree/main/ejercicios-guiados/EjercicioGuiado15"></div> 
+
+          <!-- Varias imágenes (usa la carpeta /img del sitio personal)  -->
+          <div class="practice-images">
+            <span data-image-url="img/EjercicioGuiado15_01.png"></span>
+            <span data-image-url="img/EjercicioGuiado15_02.png"></span>
+            <span data-image-url="img/EjercicioGuiado15_03.png"></span>
+            <span data-image-url="img/EjercicioGuiado15_04.png"></span>
+          </div> 
+
+          <!-- pestañas de código -->
+          <!-- SOLO estos 3 archivos en pestañas (usa RAW con /main/) -->
+           <div class="code-files">
+            <span data-filename="locust_breakpoint.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado15/locust_breakpoint.py"></span>
+            <span data-filename="locust_breakpoint_balanced.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado15/locust_breakpoint_balanced.py"></span>
+            <span data-filename="locust_breakpoint_extended.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado15/locust_breakpoint_extended.py"></span>
+            <span data-filename="locust_breakpoint_super_fast.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado15/locust_breakpoint_super_fast.py"></span>
+            <span data-filename="locust_stress_ultimate.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado15/locust_stress_ultimate.py"></span>
+          </div>
+        </div> 
+
+        <a class="btn open-modal">Ver detalles y código</a>
+        </article>
+
+        <!-- ======= EJERCICIO GUIADO 16 (PLANTILLA) ======= -->
+        <!-- Duplica este bloque y solo cambia el número/ruta -->
+        <article class="card">
+        <div class="head">
+            <div class="icon"><i class="fa-solid fa-terminal"></i></div>
+            <h3 style="margin:0">Ejercicio Guiado 16 Locust CSV feeder (users.csv) </h3>
+        </div>
+        <p class="desc">Ejercicio de Locust que utiliza un archivo `users.csv` con credenciales reales para simular distintos usuarios en login y operaciones autenticadas.</p>
+        <div class="tags"><span class="tagchip">LOCUST</span><span class="tagchip">CSVFEEDER</span><span class="tagchip">PYTHON</span><span class="tagchip">LOADTESTING</span></div>
+
+        <div class="modal-info" style="display:none">
+
+          <div class="objective">
+            Objetivo: Utilizar un feeder CSV (`users.csv`) para simular usuarios reales distintos en escenarios de login y operaciones que requieran autenticación, validando comportamiento y métricas por usuario.
+          </div>
+
+          <div class="intro">
+            Introducción: El uso de un archivo CSV permite modelar credenciales y datos por usuario en Locust, facilitando pruebas más realistas y el análisis de comportamiento por identidad.
+          </div>
+
+          <div class="development">
+            Desarrollo: Se incluye `locust_csv.py` que carga `users.csv` y alimenta los usuarios de Locust en las tareas de login y acciones autenticadas. Tras la ejecución se genera `reporte_csv.html` con métricas por usuario, latencias y tasas de error. El repositorio contiene además el archivo `users.csv` con las credenciales de prueba y una carpeta `imagenes` con capturas.
+          </div>
+
+          <div class="conclusion">
+            Conclusión: El uso de CSV feeders en Locust permite simular escenarios más fieles al comportamiento real de múltiples usuarios, mejorando la calidad de las pruebas y la capacidad de identificar problemas relacionados con credenciales, permisos y datos por usuario.
+          </div>
+
+          <div class="learnings">
+            Aprendizajes Clave: Cómo configurar feeders CSV en Locust, cargar y mapear credenciales por usuario, análisis de métricas por identidad y buenas prácticas para manejo seguro de credenciales en pruebas (no subir credenciales reales en repos publicos).
+          </div>
+
+          <div class="github-link"
+              data-url="https://github.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/tree/main/ejercicios-guiados/EjercicioGuiado16"></div> 
+
+          <!-- Varias imágenes (usa la carpeta /img del sitio personal)  -->
+          <div class="practice-images">
+            <span data-image-url="img/EjercicioGuiado16_01.png"></span>
+            <span data-image-url="img/EjercicioGuiado16_02.png"></span>
+          </div> 
+
+          <!-- pestañas de código -->
+          <!-- SOLO estos 3 archivos en pestañas (usa RAW con /main/) -->
+           <div class="code-files">
+            <span data-filename="locust_csv.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado16/locust_csv.py"></span>
+            <span data-filename="reporte_csv.html"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado16/reporte_csv.html"></span>
+            <span data-filename="users.csv"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado16/users.csv"></span>
+          </div>
+        </div> 
+
+        <a class="btn open-modal">Ver detalles y código</a>
+        </article>
+
+        <!-- ======= EJERCICIO GUIADO 17 (PLANTILLA) ======= -->
+        <!-- Duplica este bloque y solo cambia el número/ruta -->
+        <article class="card">
+        <div class="head">
+            <div class="icon"><i class="fa-solid fa-terminal"></i></div>
+            <h3 style="margin:0">Ejercicio Guiado 17 Buckets </h3>
+        </div>
+        <p class="desc">Práctica enfocada en el uso de Google Cloud Storage para la gestión de archivos dentro del microservicio. Incluye la implementación de carga y descarga de archivos, así como la configuración de permisos y políticas de acceso en los buckets. El objetivo es comprender cómo interactuar correctamente con GCS, asegurar el control de acceso y manejar archivos de forma eficiente desde un entorno basado en microservicios.</p>
+        <div class="tags"><span class="tagchip">BUCKETS GCP</span><span class="tagchip">LIBROS</span><span class="tagchip">GCS</span><span class="tagchip">SWAGGER</span></div>
+
+        <div class="modal-info" style="display:none">
+
+
+          <div class="objective">
+            Objetivo: Configurar y validar Google Cloud Storage como almacenamiento del microservicio, manejando credenciales y permisos correctos.
+          </div>
+
+          <div class="intro">
+            Introducción: Se creó un bucket en GCP y se configuraron credenciales para permitir que el microservicio suba, descargue y liste archivos desde Cloud Storage.
+          </div>
+
+          <div class="development">
+            Desarrollo: Se implementó un ejemplo en app.py usando el SDK oficial de GCP con el archivo gcp-credentials.json, realizando pruebas de subida, descarga y validación de permisos.
+          </div>
+
+          <div class="conclusion">
+            Conclusión: La integración con Cloud Storage simplifica el manejo de archivos y mejora la escalabilidad del servicio, documentando roles, políticas y manejo seguro de credenciales.
+          </div>
+
+          <div class="learnings">
+            Aprendizajes: Uso del SDK de GCP, gestión segura de credenciales y buenas prácticas para buckets públicos y privados dentro de un microservicio.
+          </div>
+
+          <div class="github-link"
+              data-url="https://github.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/tree/main/ejercicios-guiados/EjercicioGuiado17"></div> 
+
+          <!-- Varias imágenes (usa la carpeta /img del sitio personal)  -->
+          <div class="practice-images">
+            <span data-image-url="img/EjercicioGuiado17_01.png"></span>
+            <span data-image-url="img/EjercicioGuiado17_02.png"></span>
+            <span data-image-url="img/EjercicioGuiado17_03.png"></span>
+            <span data-image-url="img/EjercicioGuiado17_04.png"></span>
+            <span data-image-url="img/EjercicioGuiado17_05.png"></span>
+            <span data-image-url="img/EjercicioGuiado17_06.png"></span>
+            <span data-image-url="img/EjercicioGuiado17_07.png"></span>
+            <span data-image-url="img/EjercicioGuiado17_08.png"></span>
+            <span data-image-url="img/EjercicioGuiado17_09.png"></span>
+            <span data-image-url="img/EjercicioGuiado17_10.png"></span>
+            <span data-image-url="img/EjercicioGuiado17_11.png"></span>
+          </div> 
+
+          <!-- pestañas de código -->
+          <!-- SOLO estos 3 archivos en pestañas (usa RAW con /main/) -->
+           <div class="code-files">
+            <span data-filename="app.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado17/app.py"></span>
+            <span data-filename="env.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado17/env.py"></span>
+            <span data-filename="images"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado17/images.sql"></span>
+          </div>
+        </div> 
+
+        <a class="btn open-modal">Ver detalles y código</a>
+        </article>
+
+
+        <!-- ======= EJERCICIO GUIADO 18 (PLANTILLA) ======= -->
+        <!-- Duplica este bloque y solo cambia el número/ruta -->
+        <article class="card">
+        <div class="head">
+            <div class="icon"><i class="fa-solid fa-terminal"></i></div>
+            <h3 style="margin:0">Ejercicio Guiado 18 Buckets Libros + JWT</h3>
+        </div>
+        <p class="desc">Integración del microservicio de Libros + JWT con Swagger/OpenAPI para documentar sus endpoints y conexión con Google Cloud Storage para manejar archivos en buckets protegidos con JWT para las imagenes de los libros. La práctica muestra cómo exponer operaciones del servicio, asegurar accesos y gestionar archivos dentro de GCP.</p>
+        <div class="tags"><span class="tagchip">BUCKETS GCP</span><span class="tagchip">IMG GCS</span><span class="tagchip">LIBROS</span><span class="tagchip">JWT</span><span class="tagchip">SWAGGER</span></div>
+
+        <div class="modal-info" style="display:none">
+
+          <div class="objective">
+            Objetivo: Implementar endpoints REST para gestionar archivos en buckets (upload, download, list y delete) las imagenes para los libros de buckets-mariadb y documentarlos con Swagger para facilitar su uso.
+          </div>
+
+          <div class="intro">
+            Introducción: Se integró Google Cloud Storage con Swagger/OpenAPI para permitir probar e interactuar con los endpoints del microservicio desde una interfaz generada automáticamente.
+          </div>
+
+          <div class="development">
+            Desarrollo: Se creó un microservicio en Python que expone rutas para operar con Cloud Storage y se agregó Swagger para documentar y probar cada endpoint desde la interfaz web incluida en el repositorio.
+          </div>
+
+          <div class="conclusion">
+            Conclusión: Swagger permitió validar fácilmente las operaciones del microservicio y agilizar la integración con otros servicios mediante una documentación clara y navegable.
+          </div>
+
+          <div class="learnings">
+            Aprendizajes: Integración de GCS en un microservicio REST, uso de Swagger/OpenAPI, pruebas de endpoints y manejo seguro de operaciones de almacenamiento.
+          </div>
+
+          <div class="github-link"
+              data-url="https://github.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/tree/main/ejercicios-guiados/EjercicioGuiado17"></div> 
+
+          <!-- Varias imágenes (usa la carpeta /img del sitio personal)  -->
+          <div class="practice-images">
+            <span data-image-url="img/EjercicioGuiado18_01.png"></span>
+            <span data-image-url="img/EjercicioGuiado18_02.png"></span>
+            <span data-image-url="img/EjercicioGuiado18_03.png"></span>
+            <span data-image-url="img/EjercicioGuiado18_04.png"></span>
+            <span data-image-url="img/EjercicioGuiado18_05.png"></span>
+            <span data-image-url="img/EjercicioGuiado18_06.png"></span>
+            <span data-image-url="img/EjercicioGuiado18_07.png"></span>
+            <span data-image-url="img/EjercicioGuiado18_08.png"></span>
+            <span data-image-url="img/EjercicioGuiado18_09.png"></span>
+          </div> 
+
+          <!-- pestañas de código -->
+          <!-- SOLO estos 3 archivos en pestañas (usa RAW con /main/) -->
+           <div class="code-files">
+            <span data-filename="app.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado18/app.py"></span>
+            <span data-filename="main.py"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado18/main.py"></span>
+            <span data-filename="index.html"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado18/index.html"></span>
+            <span data-filename="app.js"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado18/app.js"></span>
+            <span data-filename="style.css"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado18/style.css"></span>
+            <span data-filename="openapi.yaml"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado18/openapi.yaml"></span>
+            <span data-filename="libros.sql"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado18/libros.sql"></span>
+            <span data-filename="jwt.sql"
+                  data-raw-url="https://raw.githubusercontent.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/main/ejercicios-guiados/EjercicioGuiado18/jwt.sql"></span>
+          </div>
+        </div> 
+
+        <a class="btn open-modal">Ver detalles y código</a>
+        </article>
+        
+      </div>
+    </div>
+  </section>
+
+  
   <!-- TAREAS -->
   <section id="tareas">
     <div class="grid">
@@ -536,6 +1188,39 @@
 
     <a class="btn open-modal">Ver documento</a>
   </article>
+
+<!-- ======= PROYECTO FINAL – ENTREGA FINAL  ======= -->
+<article class="card">
+  <div class="head">
+    <div class="icon"><i class="fa-solid fa-heart-pulse"></i></div>
+    <h3 style="margin:0">Proyecto Final Heartguard – Versión ENTREGA FINAL</h3>
+  </div>
+
+  <p class="desc">
+    Presentación final del proyecto (Versión Final) en formato PDF con la documentación y resultados consolidados., donde se documenta el progreso del desarrollo del sistema completo, incluyendo integración de microservicios, validación de sesiones con Redis+JWT, avances en el CMS, conexión con la app móvil y pruebas iniciales del módulo de monitoreo cardiovascular.
+  </p>
+
+  <div class="tags">
+    <span class="tagchip">Presentación</span>
+    <span class="tagchip">Reporte</span>
+    <span class="tagchip">PDF</span>
+  </div>
+
+  <div class="modal-info" style="display:none">
+    <div class="learnings">Arquitectura integrada, validación de sesiones, pruebas del pipeline y optimización general.</div>
+
+  <div class="pdf-files">
+    <span data-filename="Presentación Final Proyecto Heartguard.pdf"
+    data-pdf-url="img/HeartGuard%20PP1.v3.pdf"></span>
+  </div>
+
+    <div class="github-link"
+      data-url="https://github.com/Pablocc23/INTEGRACION-DE-APLICACIONES-COMPUTACIONALES/tree/main/proyecto-final"></div>
+  </div>
+
+  <a class="btn open-modal">Ver documento</a>
+</article>
+
 
 </div>
 
